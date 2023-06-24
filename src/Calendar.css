@@ -1,0 +1,71 @@
+/* Conteneur principal du calendrier */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    position: absolute;
+    top: 15%; /* ajuster la valeur de top en fonction de la situation */
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  
+
+/* Tableau des jours */
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.calendar td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Jours du calendrier */
+.calendar-day {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.calendar-day:hover {
+  background-color: #f2f2f2;
+}
+
+.calendar-day:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Indicateur de jour sélectionné */
+.selected-day:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #0077b6;
+  border-radius: 50%;
+}

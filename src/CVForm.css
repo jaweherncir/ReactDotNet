@@ -1,0 +1,73 @@
+body {
+    background-color: #f5f5f5;
+  }
+  
+  .cv-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 310px; /* Ajout de la marge supérieure */
+  }
+  
+  .cv-form-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 600px;
+  }
+  
+  .cv-form-title {
+    color: #0077b6;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .cv-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cv-form-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cv-form-input,
+  .cv-form-textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .cv-form-textarea {
+    height: 200px;
+  }
+  
+  .cv-form-submit {
+    background-color: #6cbf84;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .cv-form-submit:hover {
+    background-color: #5aae73;
+  }
+  

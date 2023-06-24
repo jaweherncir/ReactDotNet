@@ -1,0 +1,63 @@
+.job-posting-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 80px;
+  }
+  
+  .job-posting-form-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 600px;
+  }
+  
+  .job-posting-form-title {
+    color: #0077b6;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .job-posting-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .job-posting-form-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .job-posting-form-input,
+  .job-posting-form-textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .job-posting-form-textarea {
+    height: 200px;
+  }
+  
+  .job-posting-form-submit {
+    background-color: #6cbf84;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20
+  }  

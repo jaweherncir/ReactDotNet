@@ -1,0 +1,142 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin-left: 20px;
+  position: relative;
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-out;
+}
+
+.nav-link:hover:before {
+  transform: scaleX(1);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none;
+  z-index: 1;
+}
+
+.dropdown-menu:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+}
+
+.dropdown-item {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-menu {
+    margin-top: 20px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    display: block;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .dropdown-menu:before {
+    display: none;
+  }
+
+  .dropdown-toggle {
+
+    margin-left: 0;
+  }
+  
+  .dropdown-item:last-child {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
